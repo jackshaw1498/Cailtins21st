@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = "Present 1";
+}
+
+<div class="background-image">
+    <img src="~/images/belfast-lodges.png" alt="Birthday Image" />
+</div>
+
+<div class="grey-line2"></div>
+
+
+<!-- Polaroid Title -->
+<div class="polaroid-title">
+    <h2>Belfast Lodges Itenirey</h2>
+    <p>28th July</p>
+</div>
+
+<div class="roadtrip-details">
+  
+    <div class="vertical-timeline">
+        <div class="card">
+            <img src="~/images/mourne.jpg" class="card-img-top fixed-size-img" alt="Mourne Mountains">
+            <div class="card-body">
+                <h5 class="card-title">Day 1</h5>
+                <p class="card-text">We'll start our adventure by heading to the beautiful Mourne Mountains. We'll take the scenic Ard Peninsula route, get the ferry from Portaferry to Strangford, and head towards the majestic Mourne Mountains.</p>
+            </div>
+        </div>
+        <div class="arrow-down">↓</div>
+        <div class="card">
+            <img src="~/images/campervanview.jpg" class="card-img-top fixed-size-img" alt="Mourne Mountains">
+            <div class="card-body">
+                <h5 class="card-title">Day 1</h5>
+                <p class="card-text">After a day of travel, we'll park our campervan in the heart of the Mourne Mountains and settle in for a cozy night surrounded by nature's beauty.</p>
+            </div>
+        </div>
+        <div class="arrow-down">↓</div>
+        <div class="card">
+            <img src="~/images/Streamvale.png" class="card-img-top fixed-size-img" alt="Streamvale Farm">
+            <div class="card-body">
+                <h5 class="card-title">Day 2</h5>
+                <p class="card-text">We'll head to Streamvale Farm, where we'll enjoy a day filled with delightful farm animals and fun activities. It's the perfect place to relax and have some fun.</p>
+            </div>
+        </div>
+        <div class="arrow-down">↓</div>
+        <div class="card">
+            <img src="~/images/belfast-lodges.png" class="card-img-top fixed-size-img" alt="Belfast Lodges">
+            <div class="card-body">
+                <h5 class="card-title">Day 2</h5>
+                <p class="card-text">We'll finish our trip by relaxing at the Belfast Lodges Glamping Pods, enjoying the hot tub and the stunning scenic views. It's the perfect way to end our adventure.</p>
+            </div>
+        </div>
+    </div>
+    <p>I can't wait to create wonderful memories with you on this trip!</p>
+    <p>Love,</p>
+    <p>[Your Name]</p>
+</div>
+
+<style>
+    .roadtrip-details {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .roadtrip-details h2 {
+        color: #ff6b6b;
+        font-family: 'Abadi', sans-serif;
+    }
+
+    .roadtrip-details p {
+        font-family: 'Abadi', sans-serif;
+        color: #ffffff;
+    }
+
+    .vertical-timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .fixed-size-img {
+        width: 100%;
+        height: 290px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+        font-family: 'Abadi', sans-serif;
+    }
+
+    .card-title {
+        color: #ff6b6b;
+    }
+
+    .arrow-down {
+        font-size: 2em;
+        color: #ff6b6b;
+        margin: 10px 0;
+    }
+</style>
