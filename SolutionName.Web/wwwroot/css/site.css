@@ -79,6 +79,15 @@ body {
 }
 
 
+
+.hidden-video {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+
 /*===============================================================================================*/
 /*=================================== Background Image ==========================================*/
 
@@ -89,7 +98,7 @@ body {
   max-height: 600px;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 80px; /* Adjust the value as needed */
+  margin-bottom: 30px; /* Adjust the value as needed */
 }
 
 .background-image img {
@@ -115,7 +124,7 @@ body {
   height: 3px; /* Set the thickness of the line */
   background-color: rgba(190, 189, 189, 0.634); /* Set the color of the line */
   width: 100%; /* Makes it span the full width of its container */
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 40px;
   margin-left: auto; /* Center the line horizontally */
   margin-right: auto; /* Center the line horizontally */
@@ -284,6 +293,7 @@ body {
   font-size: 1.2em;
   color: #555; /* Darker text color for contrast */
   margin: 5px 0 20px;
+  margin-bottom: 40px;
 }
 
 
@@ -476,7 +486,7 @@ body {
 }
 
 /* Specific height for the second image */
-#presents .flip-card:nth-of-type(2) .present-image {
+#presents .flip-card:nth-of-type(1) .present-image {
   height: 160px; /* Set a different height for the second image */
 }
 

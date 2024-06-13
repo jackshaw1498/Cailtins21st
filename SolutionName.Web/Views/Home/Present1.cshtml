@@ -3,107 +3,75 @@
 }
 
 <div class="background-image">
-    <img src="~/images/belfast-lodges.png" alt="Birthday Image" />
+    <img src="~/images/campervan.jpg" alt="Birthday Image" />
 </div>
+
+<!-- Back Button -->
+    <div style="text-align:center; margin-top: 20px;">
+        <a href="/#reveal-presents-section" style="text-decoration: none; color: #fff; background-color: #ff6b6b; padding: 10px 20px; border-radius: 5px;">Back to Presents 🎁</a>
+    </div>
 
 <div class="grey-line2"></div>
 
-
-<!-- Polaroid Title -->
-<div class="polaroid-title">
-    <h2>Belfast Lodges Itenirey</h2>
-    <p>28th July</p>
+<div class="custom-image-container" style="text-align:center;">
+  <img src="/images/campervan1.jpg" alt="Rock Farm" style="max-width:260px; height:auto;">
+  <!-- Title under the image -->
+  <h2 style="margin-top: 20px; margin-bottom: 20px; font-size: 26px; color:  #666;"><b>Campervan Adventures Await</b></h2>
+  <!-- Text under the title -->
+  <p style="color: #666; font-size: 16px; text-align: center;">
+    This summer, from June to September, you have our very own campervan! Imagine the freedom of exploring Ireland together, creating unforgettable memories on the road.
+  </p>
+  <!-- New paragraph -->
+  <p style="color: #666; font-size: 16px; text-align: center;">
+    We can embark on spontaneous trips, visit beautiful landscapes, and discover charming villages. Whether it's a coastal drive or a mountain escape, our adventure awaits.
+  </p>
+  <p style="color: #666; font-size: 16px; text-align: center;">
+    Let's look forward to sunny days, starry nights, and all the wonderful experiences we'll share on our island journey this summer.
+  </p>
+  <p style="color: #666; font-size: 16px; text-align: center;">
+    <b>"Every trip is a new story. Let's write ours together."</b>
+  </p>
 </div>
 
-<div class="roadtrip-details">
-  
-    <div class="vertical-timeline">
-        <div class="card">
-            <img src="~/images/mourne.jpg" class="card-img-top fixed-size-img" alt="Mourne Mountains">
-            <div class="card-body">
-                <h5 class="card-title">Day 1</h5>
-                <p class="card-text">We'll start our adventure by heading to the beautiful Mourne Mountains. We'll take the scenic Ard Peninsula route, get the ferry from Portaferry to Strangford, and head towards the majestic Mourne Mountains.</p>
-            </div>
-        </div>
-        <div class="arrow-down">↓</div>
-        <div class="card">
-            <img src="~/images/campervanview.jpg" class="card-img-top fixed-size-img" alt="Mourne Mountains">
-            <div class="card-body">
-                <h5 class="card-title">Day 1</h5>
-                <p class="card-text">After a day of travel, we'll park our campervan in the heart of the Mourne Mountains and settle in for a cozy night surrounded by nature's beauty.</p>
-            </div>
-        </div>
-        <div class="arrow-down">↓</div>
-        <div class="card">
-            <img src="~/images/Streamvale.png" class="card-img-top fixed-size-img" alt="Streamvale Farm">
-            <div class="card-body">
-                <h5 class="card-title">Day 2</h5>
-                <p class="card-text">We'll head to Streamvale Farm, where we'll enjoy a day filled with delightful farm animals and fun activities. It's the perfect place to relax and have some fun.</p>
-            </div>
-        </div>
-        <div class="arrow-down">↓</div>
-        <div class="card">
-            <img src="~/images/belfast-lodges.png" class="card-img-top fixed-size-img" alt="Belfast Lodges">
-            <div class="card-body">
-                <h5 class="card-title">Day 2</h5>
-                <p class="card-text">We'll finish our trip by relaxing at the Belfast Lodges Glamping Pods, enjoying the hot tub and the stunning scenic views. It's the perfect way to end our adventure.</p>
-            </div>
-        </div>
-    </div>
-    <p>I can't wait to create wonderful memories with you on this trip!</p>
-    <p>Love,</p>
-    <p>[Your Name]</p>
-</div>
 
-<style>
-    .roadtrip-details {
-        margin: 20px;
-        padding: 20px;
-    }
 
-    .roadtrip-details h2 {
-        color: #ff6b6b;
-        font-family: 'Abadi', sans-serif;
-    }
 
-    .roadtrip-details p {
-        font-family: 'Abadi', sans-serif;
-        color: #ffffff;
-    }
 
-    .vertical-timeline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Example</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 400px; margin-top: 80px; margin-bottom: 80px;"></div>
 
-    .card {
-        width: 100%;
-        max-width: 600px;
-        margin: 10px 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd;
-        border-radius: 10px;
-    }
+  <script>
+    // Initialize the map and set its view to a specific location and zoom level
+    var map = L.map('map').setView([53.41291, -8.24389], 6); // Center of Ireland
 
-    .fixed-size-img {
-        width: 100%;
-        height: 290px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-    }
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-    .card-body {
-        font-family: 'Abadi', sans-serif;
-    }
+    // Add markers
+    var markers = [
+      { position: [52.160858, -10.245782], title: "Dingle Peninsula" },
+      { position: [54.597285, -5.930120], title: "Belfast" },
+      // Add more markers as needed
+    ];
 
-    .card-title {
-        color: #ff6b6b;
-    }
+    markers.forEach(function(markerInfo) {
+      L.marker(markerInfo.position).addTo(map)
+        .bindPopup(markerInfo.title);
+    });
+  </script>
+</body>
+</html>
 
-    .arrow-down {
-        font-size: 2em;
-        color: #ff6b6b;
-        margin: 10px 0;
-    }
-</style>
